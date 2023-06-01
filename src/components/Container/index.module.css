@@ -1,0 +1,15 @@
+/* Small Screen */
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	/* padding: 1rem; */
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+}
