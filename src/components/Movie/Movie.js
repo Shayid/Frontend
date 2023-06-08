@@ -1,0 +1,20 @@
+import React from "react";
+import StyledMovie from "../ui/Movie";
+
+function Movie(props) {
+	const { movie } = props;
+	return (
+		<StyledMovie>
+			<img
+				src={
+					movie.poster || `https://image.tmdb.org/t/p/w300/${movie.poster_path}`
+				}
+				alt={`poster ${movie.title}`}
+			/>
+			<h3>{movie.title}</h3>
+			<p>{movie.year || movie.release_date}</p>
+		</StyledMovie>
+	);
+}
+
+export default Movie;
